@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DRIPHUB | Streetwear Essentials</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #111, #000);
+    }
+
+    
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('https://i.pinimg.com/originals/51/9b/76/519b76a147dfafe8244d574e3895c97f.gif') no-repeat center center/cover;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+.shop-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #e60000, #ffb3b3);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(230, 0, 0, 0.3);
+}
+
+.shop-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 179, 179, 0.4);
+}
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 3.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      color: #f5f5f5;
+    }
+
+    .hero button {
+      padding: 14px 40px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #e60000, #ffb3b3);
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(230, 0, 0, 0.3);
+    }
+
+    .hero button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(255, 179, 179, 0.4);
+    }
+
+    
+    .features {
+      padding: 80px 20px;
+      background: #fff;
+      color: #111;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      text-align: center;
+    }
+
+    .feature {
+      max-width: 300px;
+      background: #f8f8f8;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 25px rgba(230, 0, 0, 0.2);
+    }
+
+    .feature h3 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      color: #e60000;
+      font-weight: 600;
+    }
+
+    .feature p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      border-top: 2px solid #e60000;
+    }
+
+    .footer-icons {
+      margin-bottom: 15px;
+    }
+
+    .footer-icons i {
+      margin: 0 10px;
+      font-size: 22px;
+      color: #fff;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .footer-icons i:hover {
+      color: #e60000;
+      transform: scale(1.1);
+    }
+
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-content fade-in">
+      <h1>DRIPHUB</h1>
+      <p>Own The Streets, Define Your Style.
+          <br>
+          Discover the latest streetwear drops that match your vibe.</p>
+      <a href="villahermosastore.html" class="shop-btn">Shop Now</a>
+    </div>
+  </section>
+
+  
+  <section class="features">
+    <div class="feature fade-in">
+      <h3>🔥 Streetwear Vibe</h3>
+      <p>Explore bold, modern designs made for those who own their style. Every piece screams confidence.</p>
+    </div>
+
+    <div class="feature fade-in">
+      <h3>💎 Quality You Feel</h3>
+      <p>Our pieces are crafted with premium materials for comfort, durability, and all-day drip.</p>
+    </div>
+
+    <div class="feature fade-in">
+      <h3>⚡ Fast & Reliable</h3>
+      <p>Get your favorite fits delivered fast — streetwear essentials, right to your doorstep.</p>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="footer-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-tiktok"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+    &copy; 2025 DRIPHUB | Streetwear Essentials
+  </footer>
+
+</body>
+</html>
